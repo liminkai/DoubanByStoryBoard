@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="pushHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDX-Pk-PfH">
+                    <rect key="frame" x="15" y="8" width="32" height="32"/>
+                    <color key="backgroundColor" red="0.25847614200000002" green="0.54431078850000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="3fD-pe-m0H"/>
+                        <constraint firstAttribute="width" constant="32" id="z3m-3t-KoS"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BhM-mP-WTm">
+                    <rect key="frame" x="381" y="14" width="20" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ken-1n-PW1"/>
+                        <constraint firstAttribute="width" constant="20" id="qZG-Qj-Fov"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="定时设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ua-hG-0uk">
+                    <rect key="frame" x="57" y="13" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FDX-Pk-PfH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="050-HW-KJ1"/>
+                <constraint firstAttribute="trailing" secondItem="BhM-mP-WTm" secondAttribute="trailing" constant="10" id="955-d0-SeQ"/>
+                <constraint firstItem="BhM-mP-WTm" firstAttribute="centerY" secondItem="FDX-Pk-PfH" secondAttribute="centerY" id="G0O-xh-Rb2"/>
+                <constraint firstItem="6Ua-hG-0uk" firstAttribute="leading" secondItem="FDX-Pk-PfH" secondAttribute="trailing" constant="10" id="N40-rX-Mlx"/>
+                <constraint firstItem="6Ua-hG-0uk" firstAttribute="centerY" secondItem="FDX-Pk-PfH" secondAttribute="centerY" id="nzd-2W-XwA"/>
+                <constraint firstItem="FDX-Pk-PfH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="sTZ-vD-vLk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pushImg" destination="FDX-Pk-PfH" id="tDU-zW-igZ"/>
+                <outlet property="pushLabel" destination="6Ua-hG-0uk" id="RcU-zh-HO0"/>
+                <outlet property="statusImg" destination="BhM-mP-WTm" id="XuC-Lq-KZf"/>
+            </connections>
+            <point key="canvasLocation" x="210.5" y="-5"/>
+        </view>
+    </objects>
+</document>
